@@ -4,12 +4,12 @@
     <title>Google Registration</title>
   </head>
   <body>
-  <h1>My Google Login Project</h1>
+  <h1>Hello...</h1>
   {% if user.is_authenticated %}
   <p>Welcome, {{ user.username }} !</p>
  
   {% else %}
-  <h1>My Google Login Project</h1>
+  <h1>Please login</h1>
   <a href="{% provider_login_url 'google' %}">Login with Google</a>
   {% endif %}
 
